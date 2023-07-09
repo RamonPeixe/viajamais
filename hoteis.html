@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaja+</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon"href="Assets/favicon-16x16.png">
+</head>
+<body>
+    <header class = "cabecalho">
+        <div class = "container">
+            <input type = "checkbox" id = "menu" class = "container__botao">
+            <label for = "menu" class="container__rotulo">
+                <span class = "cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class = "lista-menu">
+                <li class = "lista-menu__item">
+                    <a href = "index.html" class = "lista-menu__link">Home</a>
+                </li>
+                <li class = "lista-menu__item">
+                    <a href = "destinos.html" class = "lista-menu__link">Destinos</a>
+                </li>
+                <li class = "lista-menu__item">
+                    <a href = "#" class = "lista-menu__link">Hotéis</a>
+                </li>
+                <li class = "lista-menu__item">
+                    <a href = "sobre.html" class = "lista-menu__link">Sobre</a>
+                </li>
+                <li class = "lista-menu__item">
+                    <a href = "contato.html" class = "lista-menu__link">Contato</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+            <li class="opcoes__item"><a href="index.html" class="opcoes__link">Home</a></li>
+            <li class="opcoes__item"><a href="destinos.html" class="opcoes__link">Destinos</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Hotéis</a></li>
+            <li class="opcoes__item"><a href="sobre.html" class="opcoes__link">Sobre</a></li>
+            <li class="opcoes__item"><a href="contato.html" class="opcoes__link">Contato</a></li>
+        </ul>
+    </header>
+
+    <section class = "banner">
+        <h2 class = "banner__titulo">Já sabe por onde começar?</h2>
+        <p class = "banner__texto">Explore nossos destinos incríveis e planeje sua próxima aventura!</p>
+        <input type="search" class="banner__pesquisa" placeholder= "Qual será seu próximo destino?">
+    </section>
+
+    <section class="hoteis">
+        <div class="hotel">
+          <img src="Assets/hotel-mar-azul.jpg" alt="Hotel Mar Azul" class="hotel-imagem">
+          <div class="hotel-info">
+            <h3 class="hotel-titulo">Hotel Mar Azul</h3>
+            <p class="hotel-descricao">Desfrute de uma estadia luxuosa no Hotel Mar Azul, localizado à beira-mar. Relaxe em quartos elegantes, desfrute de refeições gourmet e aproveite a vista deslumbrante do oceano. Com uma equipe amigável e serviços de primeira classe, o Hotel Mar Azul oferece uma experiência inesquecível.</p>
+            <p class="hotel-preco">Diárias a partir de: R$ 200,00</p>
+            <a href="#" class="botao-reservar">Reservar agora</a>
+          </div>
+        </div>
+        <div class="hotel">
+          <img src="Assets/resort-da-montanha.jpg" alt="Resort da Montanha" class="hotel-imagem">
+          <div class="hotel-info">
+            <h3 class="hotel-titulo">Resort da Montanha</h3>
+            <p class="hotel-descricao">O Resort da Montanha é o refúgio perfeito para os amantes da natureza. Situado em meio às majestosas montanhas, oferece uma estadia tranquila e revigorante. Aprecie a beleza natural, faça trilhas deslumbrantes, relaxe em banheiras de hidromassagem e desfrute de refeições deliciosas.</p>
+            <p class="hotel-preco">Diárias a partir de: R$ 150,00</p>
+            <a href="#" class="botao-reservar">Reservar agora</a>
+          </div>
+        </div>
+        <div class="hotel">
+          <img src="Assets/boutique-hotel.jpg" alt="Boutique Hotel" class="hotel-imagem">
+          <div class="hotel-info">
+            <h3 class="hotel-titulo">Boutique Hotel</h3>
+            <p class="hotel-descricao">Descubra o charme do Boutique Hotel. Com quartos elegantemente decorados, instalações modernas e um ambiente acolhedor, o hotel é perfeito para quem busca conforto e sofisticação. Desfrute de tratamentos de spa relaxantes, saboreie pratos gourmet e aproveite o serviço atencioso da equipe do hotel.</p>
+            <p class="hotel-preco">Diárias a partir de: R$ 180,00</p>
+            <a href="#" class="botao-reservar">Reservar agora</a>
+          </div>
+        </div>
+      </section>
+
+    <footer class="rodape">
+        <h2>2023 &#169 Projeto fictício sem fins comerciais.</h2>
+    </footer>
+</body>
+</html>

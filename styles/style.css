@@ -1,0 +1,467 @@
+:root {
+  --branco: #ffffff;
+  --preto: #000000;
+  --azul: #002f52;
+  --azul-hover: #0565ae;
+  --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+  --laranja: #ff5533;
+  --fonte-principal: "Poppins";
+}
+
+* {
+  font-family: var(--fonte-principal);
+}
+
+.cabecalho__menu-hamburguer {
+  width: 24px;
+  height: 24px;
+  background-image: url("../Assets/Menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
+
+.container__botao:checked ~ .container__rotulo .cabecalho__menu-hamburguer {
+  background-image: url("../Assets/menu-aberto.png");
+}
+
+.container__botao:checked ~ .container__rotulo {
+  background: var(--azul-degrade);
+}
+
+.cabecalho {
+  background-color: var(--branco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container__imagem {
+  padding: 1em;
+}
+
+.lista-menu,
+.opcoes {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+.lista-menu__item {
+  padding: 1em;
+  background-color: var(--branco);
+}
+
+.lista-menu__link {
+  background: var(--azul-degrade);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+}
+
+.container__botao {
+  display: none;
+}
+
+.opcoes__item {
+  padding: 1em;
+}
+
+.opcoes__link {
+  text-decoration: none;
+  color: var(--preto);
+}
+
+.banner {
+  background: var(--azul-degrade);
+  color: var(--branco);
+  text-align: center;
+  padding: 2.5em 2em;
+}
+
+.banner__titulo {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.banner__texto {
+  font-weight: 500;
+  margin: 1em 0;
+}
+
+.banner__pesquisa {
+  background-color: transparent;
+  border: 1px solid var(--branco);
+  color: var(--branco);
+  border-radius: 24px;
+  padding: 1em;
+  width: 100%;
+}
+
+.banner__pesquisa::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--branco);
+  background: url("../Assets/Pesquisa.svg") no-repeat;
+  background-position: 1em;
+}
+
+.video {
+  margin-top: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.link-video {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.conteudo-video {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.botao-explorar {
+  display: inline-block;
+  background-color: var(--azul);
+  color: var(--branco);
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  text-decoration: none;
+  text-align: center;
+  width: fit-content;
+  margin-bottom: 0.5em;
+}
+
+.botao-explorar:hover {
+  background-color: var(--azul-hover);
+}
+
+.rodape {
+  background: var(--azul-degrade);
+  color: var(--branco);
+  text-align: center;
+  padding: 2.5em 2em;
+  font-size: 10px;
+}
+
+
+/* Destinos */
+
+.destinos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.destino {
+  width: 300px;
+  background-color: var(--branco);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.destino-imagem {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.destino-info {
+  padding: 1rem;
+}
+
+.destino-titulo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.destino-descricao {
+  margin-bottom: 1rem;
+}
+
+.destino-preco {
+  font-weight: bold;
+}
+
+.preco {
+  color: var(--laranja);
+}
+
+.botao-comprar {
+  display: inline-block;
+  background-color: var(--azul);
+  color: var(--branco);
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+.botao-comprar:hover {
+  background-color: var(--azul-hover);
+}
+
+/*hoteis*/
+
+.hoteis {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.hotel {
+  width: 300px;
+  background-color: var(--branco);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.hotel-imagem {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hotel-info {
+  padding: 1.5rem;
+}
+
+.hotel-titulo {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.hotel-descricao {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.hotel-preco {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.botao-reservar {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--azul);
+  color: var(--branco);
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.botao-reservar:hover {
+  background-color: var(--azul-hover);
+}
+
+/*sobre*/
+
+.container__sobre{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sobre {
+  background-color: var(--branco);
+  padding: 2em;
+  text-align: center;
+}
+
+.sobre__titulo {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.sobre__descricao {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+.sobre__imagem {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 1em;
+}
+
+
+/*contato*/
+
+.contato {
+  background-color: var(--branco);
+  padding: 2em;
+  text-align: center;
+}
+
+.contato__titulo {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.contato__descricao {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+.contato__form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contato__form label,
+.contato__form input,
+.contato__form textarea,
+.contato__form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.contato__form label {
+  font-weight: 700;
+}
+
+.contato__form input,
+.contato__form textarea {
+  padding: 8px;
+  border: 1px solid var(--preto);
+  border-radius: 4px;
+}
+
+.contato__form button {
+  background-color: var(--azul);
+  color: var(--branco);
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.contato__form button:hover {
+  background-color: var(--azul-hover);
+}
+
+
+@media screen and (max-width: 600px) {
+  .container__botao {
+    display: none;
+  }
+
+  .cabecalho__menu-hamburguer {
+    display: inline-block;
+  }
+
+  .lista-menu {
+    display: none;
+  }
+
+  .container__botao:checked ~ .lista-menu {
+    display: block;
+  }
+
+  .container__botao:checked ~ .container__rotulo {
+    background: var(--azul-degrade);
+  }
+
+  .container__botao:checked ~ .opcoes {
+    display: none;
+  }
+
+  .opcoes {
+    display: none;
+  }
+
+  .video {
+    flex-direction: column;
+  }
+
+  .link-video {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .container__botao {
+    display: none;
+  }
+
+  .lista-menu {
+    display: block;
+    position: static;
+    width: 100%;
+  }
+
+  .opcoes {
+    display: none;
+  }
+
+  .video {
+    flex-direction: column;
+  }
+
+  .link-video {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .container__botao {
+    display: none;
+  }
+
+  .opcoes {
+    display: none;
+  }
+
+  .lista-menu {
+    display: flex;
+    position: static;
+    width: auto;
+  }
+
+  .link-video {
+    display: block;
+  }
+}
